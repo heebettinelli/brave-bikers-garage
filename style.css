@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+:root{
+    --cor-principal: ;
+    --cor-secundaria: ;
+    --cor-apoio: ;
+
+    --font-principal: ;
+    --font-destaque: ;
+    --font-apoio: ;
+
+}
+
+@media all {
+    *{
+        box-sizing: border-box;
+    }
+
+    img{
+        align-items: center;
+        height: auto;
+        margin: auto;
+    }
+
+    body{
+        background-color: var(--cor-background);
+        background-size: cover;
+    }
+
+    h2{
+        color: var(--cor-destaque);
+        font-family: var(--font-corpo);
+        text-align: center;
+        padding: auto; 
+        font-weight: lighter;
+    }
+
+    main{
+        text-align: center;
+        padding: 5px;
+        margin: auto;
+        background-color: var(--cor-background);
+        width: 90vw;
+        height: 95vh;
+        border-radius: 10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo {
+        font-family: var(--font-destaque);
+        color: var(--cor-destaque);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .FirstButtom, .SecondButtom, .ThirdButtom {
+        background-color: var(--cor-base);
+        border-radius: 10px;
+        border: 2px solid var(--cor-destaque);
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .footer{
+        color: var(--cor-base);
+        font-size: small;
+    }
+}
+
+/* versao mobile 390px a 1024px */
+
+@media screen and (min-width: 390px) and (max-width: 1024px) {
+    
+
+    img{
+        width: 60%;
+    }
+
+    h2{
+        font-size: 4vw;
+    }
+
+    .logo {
+        font-size: 9vw;
+    }
+
+    .FirstButtom, .SecondButtom, .ThirdButtom {
+    height: 10vh;
+    width: 75%;
+}
+
+    .footer{
+        padding-top: 11%;
+    }
+   
+}
+
+/* versao desktop 1024 px a 1366px */
+
+@media screen and (min-width: 1024px) and (max-width: 1366px) {
+
+    img{
+        width: 20%;
+    }
+
+    h2{
+        font-size: 2vw;
+    }
+
+    .logo {
+        font-size: 3.5vw;
+    }
+
+    .FirstButtom, .SecondButtom, .ThirdButtom {
+        height: 10vh;
+        width: 40%;
+    }
+
+    .footer{
+        padding-top: 1%;
+    }
+   
+}
+    
+/* versao desktop 1366px px a 1440px */
+
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+
+    img{
+        width: 20%;
+    }
+
+    h2{
+        font-size: 2vw;
+    }
+
+    .logo {
+        font-size: 3.5vw;
+    }
+
+    .FirstButtom, .SecondButtom, .ThirdButtom {
+        height: 10vh;
+        width: 40%;
+    }
+
+    .footer{
+        padding-top: 1%;
+    }
+   
+}
