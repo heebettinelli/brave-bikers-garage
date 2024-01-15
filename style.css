@@ -1,14 +1,13 @@
 @charset "UTF-8";
 
 :root{
-    --cor-principal: ;
-    --cor-secundaria: ;
-    --cor-apoio: ;
+    --cor-principal: #e9c664;
+    --cor-background: #ffffff ;
+    --cor-apoio: #000000 ;
 
-    --font-principal: ;
+    --font-principal: Arial, Helvetica, sans-serif ;
     --font-destaque: ;
     --font-apoio: ;
-
 }
 
 @media all {
@@ -28,8 +27,8 @@
     }
 
     h2{
-        color: var(--cor-destaque);
-        font-family: var(--font-corpo);
+        color: var(--cor-apoio);
+        font-family: var(--font-principal);
         text-align: center;
         padding: auto; 
         font-weight: lighter;
@@ -49,22 +48,16 @@
         transform: translate(-50%, -50%);
     }
 
-    .logo {
-        font-family: var(--font-destaque);
-        color: var(--cor-destaque);
-        align-items: center;
-        justify-content: center;
-    }
-
     .FirstButtom, .SecondButtom, .ThirdButtom {
-        background-color: var(--cor-base);
+        background-color: var(--cor-principal);
         border-radius: 10px;
-        border: 2px solid var(--cor-destaque);
-        margin-top: 10px;
+        /* border: 2px solid var(--cor-destaque); */
+        margin-top: 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
     }
 
     .flex-container {
@@ -79,9 +72,13 @@
         text-align: center;
     }
 
-    .footer{
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
         color: var(--cor-base);
-        font-size: small;
+        font-weight: lighter;
+        text-align: center;
     }
 }
 
@@ -95,21 +92,17 @@
     }
 
     h2{
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
-    .logo {
+    /* .logo {
         font-size: 9vw;
-    }
+    } */
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
     height: 10vh;
     width: 75%;
 }
-
-    .footer{
-        padding-top: 11%;
-    }
    
 }
 
@@ -133,11 +126,6 @@
         height: 10vh;
         width: 40%;
     }
-
-    .footer{
-        padding-top: 1%;
-    }
-   
 }
     
 /* versao desktop 1366px px a 1440px */
@@ -159,10 +147,6 @@
     .FirstButtom, .SecondButtom, .ThirdButtom {
         height: 10vh;
         width: 40%;
-    }
-
-    .footer{
-        padding-top: 1%;
     }
    
 }
