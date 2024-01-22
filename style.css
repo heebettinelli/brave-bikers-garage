@@ -1,13 +1,18 @@
 @charset "UTF-8";
+@import url(/Users/helen/Library/Fonts/Palestone-GrungeShadow.otf); 
+@import url(/Users/helen/Library/Fonts/Palestone-Worn.otf);
+@import url(/Users/helen/Library/Fonts/Palestone-Bold.otf);
 
 :root{
     --cor-principal: #e9c664;
+    --cor-logo: #D0953B;
     --cor-background: #ffffff ;
     --cor-apoio: #000000 ;
 
-    --font-principal: Arial, Helvetica, sans-serif ;
-    --font-destaque: ;
-    --font-apoio: ;
+    --font-destaque: Palestone-GrungeShadow ;
+    --font-principal: 'Times New Roman', Times, serif;
+    --font-apoio: Arial, Helvetica, sans-serif;
+   
 }
 
 @media all {
@@ -15,11 +20,6 @@
         box-sizing: border-box;
     }
 
-    img{
-        align-items: center;
-        height: auto;
-        margin: auto;
-    }
 
     body{
         background-color: var(--cor-background);
@@ -28,7 +28,7 @@
 
     h2{
         color: var(--cor-apoio);
-        font-family: var(--font-principal);
+        font-family: var(--font-apoio);
         text-align: center;
         padding: auto; 
         font-weight: lighter;
@@ -51,8 +51,7 @@
     .FirstButtom, .SecondButtom, .ThirdButtom {
         background-color: var(--cor-principal);
         border-radius: 10px;
-        /* border: 2px solid var(--cor-destaque); */
-        margin-top: 16px;
+        margin: 8px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -83,21 +82,18 @@
 }
 
 /* versao mobile 390px a 1024px */
+/*768 1023*/
 
 @media screen and (min-width: 360px) and (max-width: 1023px) {
-    
-
-    img{
-        width: 60%;
-    }
 
     h2{
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
-    /* .logo {
-        font-size: 9vw;
-    } */
+    .logo{
+        width: 45vw;
+        margin: 32px;
+    }
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
     height: 10vh;
@@ -106,20 +102,18 @@
    
 }
 
-/* versao desktop 1024 px a 1366px */
+/* versao desktop 1024 px a 1365px */
 
-@media screen and (min-width: 1024px) and (max-width: 1366px) {
-
-    img{
-        width: 20%;
-    }
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
 
     h2{
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
-    .logo {
-        font-size: 3.5vw;
+    .logo{
+        width: 25vw;
+        margin: 32px;
+        
     }
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
@@ -132,21 +126,19 @@
 
 @media screen and (min-width: 1366px) and (max-width: 1440px) {
 
-    img{
-        width: 20%;
-    }
-
     h2{
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
-    .logo {
-        font-size: 3.5vw;
+    .logo{
+        width: 20vw;
+        margin: 32px;
     }
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
         height: 10vh;
         width: 40%;
+        margin: 10px;
     }
    
 }
