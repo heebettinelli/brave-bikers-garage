@@ -1,25 +1,36 @@
 @charset "UTF-8";
 @import url(/Users/helen/Library/Fonts/Palestone-GrungeShadow.otf); 
-@import url(/Users/helen/Library/Fonts/Palestone-Worn.otf);
-@import url(/Users/helen/Library/Fonts/Palestone-Bold.otf);
 
 :root{
+    /* colors */
     --cor-principal: #e9c664;
     --cor-logo: #D0953B;
     --cor-background: #ffffff ;
     --cor-apoio: #000000 ;
-
+    /* fonts */
     --font-destaque: Palestone-GrungeShadow ;
     --font-principal: 'Times New Roman', Times, serif;
     --font-apoio: Arial, Helvetica, sans-serif;
-   
+   /* text sizes */
+    --font-size-h2-mobile: 3vw;
+    --font-size-h2-tablet: 2.5vw;
+    --font-size-h2-desktop: 1.5vw;
+    /* logo sizes */
+    --logo-width-mobile: 55%;
+    --logo-width-tablet: 35%;
+    --logo-width-desktop: 25%;
+    /* button sizes */
+    --button-width-mobile: 90%;
+    --button-width-tablet: 80%;
+    --button-width-desktop: 70%;
 }
 
 @media all {
     *{
         box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
     }
-
 
     body{
         background-color: var(--cor-background);
@@ -46,6 +57,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        margin-bottom: 60px;
     }
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
@@ -80,65 +92,58 @@
         text-align: center;
     }
 }
-
-/* versao mobile 390px a 1024px */
-/*768 1023*/
-
-@media screen and (min-width: 360px) and (max-width: 1023px) {
+/* versão mobile */
+@media screen and (max-width: 767px) {
 
     h2{
-        font-size: 3vw;
+        font-size: var(--font-size-h2-mobile);
     }
 
     .logo{
-        width: 45vw;
-        margin: 32px;
+        width: var(--logo-width-mobile);
+        margin: 32px auto;
     }
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
     height: 10vh;
-    width: 75%;
-}
+    width: var(--button-width-mobile);  
+    }
    
 }
-
-/* versao desktop 1024 px a 1365px */
-
-@media screen and (min-width: 1024px) and (max-width: 1365px) {
+/* versão tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
 
     h2{
-        font-size: 1.5vw;
+        font-size: var(--font-size-h2-tablet);
     }
 
     .logo{
-        width: 25vw;
-        margin: 32px;
+        width: var(--logo-width-tablet);
+        margin: 32px auto;
         
     }
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
         height: 10vh;
-        width: 40%;
+        width: var(--button-width-tablet);
     }
-}
     
-/* versao desktop 1366px px a 1440px */
-
-@media screen and (min-width: 1366px) and (max-width: 1440px) {
+}
+/* versão desktop */
+@media screen and (min-width: 992px) {
 
     h2{
-        font-size: 1.5vw;
+        font-size: var(--font-size-h2-desktop);
     }
 
     .logo{
-        width: 20vw;
+        width: var(--logo-width-desktop);
         margin: 32px;
     }
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
         height: 10vh;
-        width: 40%;
-        margin: 10px;
+        width: var(--button-width-desktop);
     }
    
 }
