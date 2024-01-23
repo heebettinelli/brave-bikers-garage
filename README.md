@@ -11,4 +11,13 @@ This project aims to create a more interactive and personalized experience for t
   <ul>Personalization</ul>
 </li>
 
+<h3>technologies Used:</h3>
 
+- Html 5: Markup language
+- Css 3: Styling Sheets 
+- JavaScript: Programming language
+- VS Code: Code editor
+
+  <h3>How to Run:</h3>
+
+Click this link and you will be redirected to start playing.
