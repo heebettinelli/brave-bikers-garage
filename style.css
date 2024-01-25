@@ -12,16 +12,16 @@
     --font-principal: 'Times New Roman', Times, serif;
     --font-apoio: Arial, Helvetica, sans-serif;
    /* text sizes */
-    --font-size-h2-mobile: 4vw;
+    --font-size-h2-mobile: 3.5vw;
     --font-size-h2-tablet: 2.5vw;
     --font-size-h2-desktop: 1.5vw;
     /* logo sizes */
-    --logo-width-mobile: 55%;
+    --logo-width-mobile: 50%;
     --logo-width-tablet: 35%;
     --logo-width-desktop: 25%;
     /* button sizes */
-    --button-width-mobile: 90%;
-    --button-width-tablet: 80%;
+    --button-width-mobile: 75%;
+    --button-width-tablet: 75%;
     --button-width-desktop: 70%;
 }
 
@@ -43,6 +43,12 @@
         text-align: center;
         padding: auto; 
         font-weight: lighter;
+        transition: width 0.5s ease-in-out
+    }
+
+    .logo{
+        max-width: 100%;
+        transition: width 0.5s ease-in-out
     }
 
     main{
@@ -84,12 +90,12 @@
     }
 
     footer{
-        position: fixed;
         bottom: 0;
         width: 100%;
         color: var(--cor-base);
         font-weight: lighter;
         text-align: center;
+        margin-top: 30px;
     }
 }
 /* versão mobile */
@@ -105,13 +111,13 @@
     }
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
-    height: 10vh;
+    height: 9vh;
     width: var(--button-width-mobile);  
     }
    
 }
 /* versão tablet */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
     h2{
         font-size: var(--font-size-h2-tablet);
@@ -124,13 +130,13 @@
     }
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
-        height: 10vh;
+        height: 9vh;
         width: var(--button-width-tablet);
     }
     
 }
 /* versão desktop */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
 
     h2{
         font-size: var(--font-size-h2-desktop);
@@ -142,7 +148,7 @@
     }
 
     .FirstButtom, .SecondButtom, .ThirdButtom {
-        height: 10vh;
+        height: 9vh;
         width: var(--button-width-desktop);
     }
    
