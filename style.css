@@ -48,7 +48,7 @@
     
     #headerButton{
         padding: 24px;
-        margin: 16px;
+        margin: 48px;
         /* espacamento 48pts para tornal o botao clicavel */
         /* LEMBRAR DE COLOCAR A SETA DE VOLTAR COMO HIDE NA HOMEPPAGE */
     }
@@ -85,7 +85,7 @@
         flex-shrink: 0;
     }
 
-    .FirstButtom, .SecondButtom, .ThirdButtom {
+    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
         flex-shrink: 0;
         background-color: var(--cor-principal);
         border-radius: 10px;
@@ -130,7 +130,7 @@
         width: var(--logo-width-mobile);
     }
 
-    .FirstButtom, .SecondButtom, .ThirdButtom {
+    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
         height: 9.5vh;
         width: var(--button-width-mobile);  
     }
@@ -147,7 +147,7 @@
         width: var(--logo-width-tablet);        
     }
 
-    .FirstButtom, .SecondButtom, .ThirdButtom {
+    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
         height: 10vh;
         width: var(--button-width-tablet);
     }
@@ -164,7 +164,7 @@
         width: var(--logo-width-desktop);
     }
 
-    .FirstButtom, .SecondButtom, .ThirdButtom {
+    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
         height: 11vh;
         width: var(--button-width-desktop);
     }
