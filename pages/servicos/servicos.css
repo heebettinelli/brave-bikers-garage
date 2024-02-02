@@ -1,1 +1,172 @@
 @charset "UTF-8";
+@import url(/Users/helen/Library/Fonts/Palestone-GrungeShadow.otf); 
+
+:root{
+    /* colors */
+    --cor-principal: #e9c664;
+    --cor-logo: #D0953B;
+    --cor-background: #ffffff ;
+    --cor-apoio: #000000 ;
+    /* fonts */
+    /* NAO ESQUECECER DE MUDAR A FONTE */
+    --font-destaque: Palestone-GrungeShadow ;
+    --font-principal: 'Times New Roman', Times, serif;
+    --font-apoio: Arial, Helvetica, sans-serif;
+   /* text sizes */
+    --font-size: 18px;
+    /* logo sizes */
+    --logo-width-mobile: 45%;
+    --logo-width-tablet: 30%;
+    --logo-width-desktop: 20%;
+    /* button width sizes */
+    --button-width-mobile: 75%;
+    --button-width-tablet: 75%;
+    --button-width-desktop: 65%;
+}
+
+@media all {
+    /* geral */
+    *{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /* body */
+    body{
+        background-color: var(--cor-background);
+        background-size: cover;
+    }
+
+    /* header */
+    header{
+        display:flex;
+        justify-content: space-between;
+        height: 10vh;
+        width: 100vw;
+    }
+    
+    #headerButton{
+        padding: 24px;
+        margin: 40px;
+        /* espacamento 48pts para tornal o botao clicavel */
+        /* LEMBRAR DE COLOCAR A SETA DE VOLTAR COMO HIDE NA HOMEPPAGE */
+    }
+    
+    .button{
+        display: flex;
+        width: 1.8rem;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        /* estilização dos icones  */
+    }
+
+    /* main */
+    main{
+        text-align: center;
+        padding: 5px;
+        margin: auto;
+        background-color: var(--cor-background);
+        margin-bottom: 40px;
+    }
+
+    h2{
+        color: var(--cor-apoio);
+        text-align: center;
+        font-family: var(--font-apoio);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .logo{
+        margin: 32px auto;
+        transition: 0.5s ease-in-out;
+        flex-shrink: 0;
+    }
+
+    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
+        flex-shrink: 0;
+        background-color: var(--cor-principal);
+        border-radius: 10px;
+        margin: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+        /* verificar o margin no telemovel pq no design ta 16px */
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        text-align: center;
+    }
+
+    footer{
+        bottom: 0;
+        width: 100%;
+        color: var(--cor-base);
+        font-weight: lighter;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+/* versão mobile */
+@media screen and (max-width: 767px) {
+
+    h2{
+        font-size: var(--font-size);
+    }
+
+    .logo{
+        width: var(--logo-width-mobile);
+    }
+
+    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
+        height: 9.5vh;
+        width: var(--button-width-mobile);  
+    }
+   
+}
+/* versão tablet */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+    h2{
+        font-size: var(--font-size);
+    }
+
+    .logo{
+        width: var(--logo-width-tablet);        
+    }
+
+    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
+        height: 10vh;
+        width: var(--button-width-tablet);
+    }
+    
+}
+/* versão desktop */
+@media screen and (min-width: 1024px) {
+
+    h2{
+        font-size: var(--font-size);
+    }
+
+    .logo{
+        width: var(--logo-width-desktop);
+    }
+
+    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
+        height: 11vh;
+        width: var(--button-width-desktop);
+    }
+   
+}
