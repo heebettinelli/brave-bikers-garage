@@ -46,6 +46,10 @@
         width: 100vw;
     }
     
+    #buttonBack{
+        display: none;
+    }
+
     #headerButton{
         padding: 24px;
         margin: 40px;
