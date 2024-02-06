@@ -57,7 +57,7 @@
         /* LEMBRAR DE COLOCAR A SETA DE VOLTAR COMO HIDE NA HOMEPPAGE */
     }
     
-    .button{
+    button{
         display: flex;
         width: 1.8rem;
         justify-content: center;
