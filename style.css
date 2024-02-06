@@ -50,7 +50,7 @@
         display: none;
     }
 
-    #headerButton{
+    .headerButton{
         padding: 24px;
         margin: 40px;
         /* espacamento 48pts para tornal o botao clicavel */
@@ -89,7 +89,7 @@
         flex-shrink: 0;
     }
 
-    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
+    .FirstButtom, .SecondButtom, .ThirdButtom {
         flex-shrink: 0;
         background-color: var(--cor-principal);
         border-radius: 10px;
@@ -122,6 +122,11 @@
         text-align: center;
         margin-top: 30px;
     }
+
+    .forthButtom{
+        display: none;
+    }
+   
 }
 /* versão mobile */
 @media screen and (max-width: 767px) {
@@ -134,7 +139,7 @@
         width: var(--logo-width-mobile);
     }
 
-    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
+    .FirstButtom, .SecondButtom, .ThirdButtom {
         height: 9.5vh;
         width: var(--button-width-mobile);  
     }
@@ -151,10 +156,11 @@
         width: var(--logo-width-tablet);        
     }
 
-    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
+    .FirstButtom, .SecondButtom, .ThirdButtom {
         height: 10vh;
         width: var(--button-width-tablet);
     }
+   
     
 }
 /* versão desktop */
@@ -168,9 +174,9 @@
         width: var(--logo-width-desktop);
     }
 
-    .FirstButtom, .SecondButtom, .ThirdButtom, .forthButtom {
+    .FirstButtom, .SecondButtom, .ThirdButtom {
         height: 11vh;
         width: var(--button-width-desktop);
     }
-   
+
 }

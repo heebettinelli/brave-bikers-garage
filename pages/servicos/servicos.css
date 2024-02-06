@@ -15,9 +15,9 @@
    /* text sizes */
     --font-size: 18px;
     /* logo sizes */
-    --logo-width-mobile: 45%;
-    --logo-width-tablet: 30%;
-    --logo-width-desktop: 20%;
+    --logo-width-mobile: 40%;
+    --logo-width-tablet: 25%;
+    --logo-width-desktop: 15%;
     /* button width sizes */
     --button-width-mobile: 75%;
     --button-width-tablet: 75%;
@@ -45,8 +45,8 @@
         height: 10vh;
         width: 100vw;
     }
-    
-    #headerButton{
+
+    .headerButton{
         padding: 24px;
         margin: 40px;
         /* espacamento 48pts para tornal o botao clicavel */
@@ -71,11 +71,18 @@
         margin-bottom: 40px;
     }
 
+    h1{
+        color: var(--cor-apoio);
+        text-align: center;
+        font-family: var(--font-apoio);
+        font-weight: bold;
+        padding: 8px;
+    }
+
     h2{
         color: var(--cor-apoio);
         text-align: center;
         font-family: var(--font-apoio);
-        font-size: 16px;
         font-weight: 400;
     }
 
@@ -118,12 +125,17 @@
         text-align: center;
         margin-top: 30px;
     }
+   
 }
 /* versão mobile */
 @media screen and (max-width: 767px) {
 
     h2{
         font-size: var(--font-size);
+    }
+
+    h1{
+        font-size: 20px;
     }
 
     .logo{
@@ -143,6 +155,10 @@
         font-size: var(--font-size);
     }
 
+    h1{
+        font-size: 25px;
+    }
+
     .logo{
         width: var(--logo-width-tablet);        
     }
@@ -151,6 +167,7 @@
         height: 10vh;
         width: var(--button-width-tablet);
     }
+   
     
 }
 /* versão desktop */
@@ -160,6 +177,10 @@
         font-size: var(--font-size);
     }
 
+    h1{
+        font-size: 30px;
+    }
+    
     .logo{
         width: var(--logo-width-desktop);
     }
@@ -168,5 +189,5 @@
         height: 11vh;
         width: var(--button-width-desktop);
     }
-   
+
 }
