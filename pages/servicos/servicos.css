@@ -12,8 +12,6 @@
     --font-destaque: Palestone-GrungeShadow ;
     --font-principal: 'Times New Roman', Times, serif;
     --font-apoio: Arial, Helvetica, sans-serif;
-   /* text sizes */
-    --font-size: 18px;
     /* logo sizes */
     --logo-width-mobile: 40%;
     --logo-width-tablet: 25%;
@@ -75,7 +73,7 @@
         color: var(--cor-apoio);
         text-align: center;
         font-family: var(--font-apoio);
-        font-weight: bold;
+        font-weight: lighter;
         padding: 8px;
     }
 
@@ -131,7 +129,7 @@
 @media screen and (max-width: 767px) {
 
     h2{
-        font-size: var(--font-size);
+        font-size: 18px;
     }
 
     h1{
@@ -152,7 +150,7 @@
 @media screen and (min-width: 767px) and (max-width: 1024px) {
 
     h2{
-        font-size: var(--font-size);
+        font-size: 20px;
     }
 
     h1{
@@ -174,7 +172,7 @@
 @media screen and (min-width: 1024px) {
 
     h2{
-        font-size: var(--font-size);
+        font-size: 25px;
     }
 
     h1{

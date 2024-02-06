@@ -12,8 +12,6 @@
     --font-destaque: Palestone-GrungeShadow ;
     --font-principal: 'Times New Roman', Times, serif;
     --font-apoio: Arial, Helvetica, sans-serif;
-   /* text sizes */
-    --font-size: 18px;
     /* logo sizes */
     --logo-width-mobile: 45%;
     --logo-width-tablet: 30%;
@@ -132,7 +130,7 @@
 @media screen and (max-width: 767px) {
 
     h2{
-        font-size: var(--font-size);
+        font-size: 18px;
     }
 
     .logo{
@@ -149,7 +147,7 @@
 @media screen and (min-width: 767px) and (max-width: 1024px) {
 
     h2{
-        font-size: var(--font-size);
+        font-size: 20px;
     }
 
     .logo{
@@ -167,7 +165,7 @@
 @media screen and (min-width: 1024px) {
 
     h2{
-        font-size: var(--font-size);
+        font-size: 25px;
     }
 
     .logo{
