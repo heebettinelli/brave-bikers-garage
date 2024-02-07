@@ -46,7 +46,7 @@
 
     .headerButton{
         padding: 24px;
-        margin: 40px;
+        margin: 32px 40px;
         /* espacamento 48pts para tornal o botao clicavel */
         /* LEMBRAR DE COLOCAR A SETA DE VOLTAR COMO HIDE NA HOMEPPAGE */
     }
